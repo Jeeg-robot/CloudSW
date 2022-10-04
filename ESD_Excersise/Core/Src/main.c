@@ -70,6 +70,9 @@ short value2find(float *array, uint8_t dim, float value)
 return -1;
 }
 
+/**/
+/* checkPalindrome copia in buffer la parola passata come variabile, la copia al contrario, la confronta con la originale e restituisce 1 se la parola è palindroma oppure 0
+/**/
 bool checkPalindrome(char *word, uint8_t dim)
 {
 	char rev_word[dim] = "";
@@ -79,10 +82,9 @@ bool checkPalindrome(char *word, uint8_t dim)
 		buffer[i] = word[i];
 		rev_word[i] = word[dim - i];
 	}
-//rev_word = reverse(word,dim)
+//char rev_word[dim]  = reverse(word,dim);
 //buffer = strncpy(buffer,word,dim);
-	if(strcmp(buffer,buffer)) return true;
-	else return false;
+strcmp(buffer,buffer)) = true ? return true : return false;
 
 }
 char reverse_word(char *word, uint8_t dim)
